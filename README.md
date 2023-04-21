@@ -1,6 +1,12 @@
 # Server monitoring
 This repository contains a docker-compose file which can be used to launch docker containers to monitor CPU, memory, IO, network, & other system metrics. The scripts have been tested & run on Ubuntu 22.04 LTS.
 
+### Node exporter dashboard - Monitor complete server metrics
+![Alt text](images/grafana_node-exporter.png "Node exporter dashboard")
+
+### Cadvisor dashboard - Monitor each docker container metrics
+![Alt text](images/grafana_cadvisor.png "Cadvisor exporter dashboard")
+
 ## Prerequisites
 Please make sure you have the following programs installed on your machine:
 - docker
@@ -20,16 +26,7 @@ Please make sure you have the following programs installed on your machine:
 - Click Import
 ![Alt text](images/grafana_import-4.png "Import dashboard")
 
-## Where can I access my services?
-You may access the services here:
 
-### Grafana
-This app will be used to monitor server resource metrics like CPU, memory, etc.
+## Where to access Grafana?
 
 http://localhost:3000
-
-#### Node exporter dashboard
-![Alt text](images/grafana_node-exporter.png "Node exporter dashboard")
-
-#### Cadvisor dashboard
-![Alt text](images/grafana_cadvisor.png "Cadvisor exporter dashboard")
